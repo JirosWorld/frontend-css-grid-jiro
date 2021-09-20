@@ -1,1 +1,69 @@
-/*Maak hier jouw CSS!*/
+/* CSS huiswerk door Jiro */
+
+* {
+    margin: 0;
+/*    default reset */
+}
+
+/* mobile-first: styles for small screens are default: */
+.container {
+    background-color: #F4F1DE;
+    display: grid;
+    grid-gap: 16px;
+    padding: 16px;
+    grid-template-columns: 3fr;
+    grid-template-rows: 50px auto 50px 50px 50px 50px;
+    grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "."
+            "f";
+    /*box-sizing: border-box;*/
+    /*after specifying the gap, excluding the edges of the container, do a "box-sizing border-box" in order to contain the padding as being part of the total width of the container*/
+}
+
+.grid-item {
+    /* give all grid items the same bg color */
+    background-color: #ba3b44;
+    padding: 16px;
+}
+
+/* define all grid area names */
+.aside-small {
+    grid-area: a;
+}
+.main {
+    grid-area: b;
+}
+.header {
+    grid-area: c;
+}
+.aside-medium {
+    grid-area: d;
+}
+.content {
+    grid-area: e;
+}
+.footer {
+    grid-area: f;
+}
+
+/* set media queries for larger screens */
+@media screen and (min-width: 768px) {
+    .container {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 170px 100px auto 50px;
+        /* ik weet niet hoe ik de Header de juiste hoogte kan geven maar dit resulteert in BIJNA 240 pixels */
+        grid-template-areas:
+            "a c c"
+            "b c c"
+            "b e d"
+            "b e ."
+            "f f f";
+    }
+}
+
