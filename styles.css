@@ -22,7 +22,7 @@
             "e"
             "."
             "f";
-    box-sizing: content-box;
+    box-sizing: border-box;
     /*after specifying the gap, excluding the edges of the container, do a "box-sizing border-box" in order to contain the padding as being part of the total width of the container*/
 }
 
@@ -58,7 +58,8 @@
         grid-auto-flow: row;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50px 190px 100px auto 50px;
-        /* ik weet niet hoe ik de Header de juiste hoogte kan geven maar die 190px resulteert in BIJNA 240 pixels - waarschijnlijk wordt de .container grid-gap er steeds bij opgeteld */
+        /* ik weet niet hoe ik de Header de juiste hoogte kan geven maar die 190px resulteert in BIJNA 240 pixels */
+        /* --> waarschijnlijk wordt de .container grid-gap er steeds bij opgeteld */
         grid-template-areas:
             "a c c"
             "b c c"
