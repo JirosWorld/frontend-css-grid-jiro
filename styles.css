@@ -7,13 +7,13 @@
 
 /* mobile-first: styles for small screens are default: */
 /* dus: scroll naar beneden als je de styles voor desktop wilt zien */
+/* en: sleep je window/scherm smaller om de veranderingen te zien */
 .container {
     background-color: #F4F1DE;
     display: grid;
     grid-gap: 16px;
     padding: 16px;
-    /*grid-template-columns: 3fr;*/ /* = not used, a span is better, see the span in the next line */
-    grid-column: span 3;
+    grid-template-columns: 1fr;
     grid-template-rows: 50px auto 50px 50px 50px 50px 50px; /* gives height to empty row too */
     grid-template-areas:
             "a"
