@@ -1,5 +1,7 @@
 # Opdracht beschrijving
 
+![Jiro-noot](./assets/jiro-comment.png "Jiro's toelichtingen staan in het CSS bestand.")
+
 ## Eindresultaat
 Gebruik CSS Grid om de deze layout voor **desktops** te maken:
 
@@ -20,6 +22,8 @@ Weet je even niet waar je moet beginnen? 🤯 Volg dan onderstaande stappen:
 1. **Belangrijk:** Leg je PC of laptop even aan de kant en pak er papier en een pen/potlood bij. Teken bovenstaand plaatje voor _Desktops_ over op papier.
 2. Teken de grid-lijnen over de blokken heen.
 3. Bedenk hoe breed en hoe hoog elke row en column moet zijn, en schrijf dat in 'grid-termen' in je schets.
+
+![Jiro-schets](./assets/grid-gesneden.png "Jiro's schets, toont de snijlijnen en class names.")
 
 Oké, je mag weer aan je laptop komen!
 
